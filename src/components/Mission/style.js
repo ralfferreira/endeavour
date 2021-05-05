@@ -7,11 +7,19 @@ export const Container = styled.div`
     width: 100%;
     align-items: center;
     background: #FFF url(${backgroundImg}) no-repeat right;
+    
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background: none;
+    }
 `
 
 export const Content = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin-left: 80px;
 
     h1{
@@ -23,8 +31,29 @@ export const Content = styled.div`
 
     p{
         font-weight: 300;
-        font-size: 55px;
+        font-size: 50px;
         display: flex;
         text-align: left;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin: 0;
+        p {
+            font-size: 35px;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        margin-left: 40px;
+        max-width: 600px;
+        h1 {
+            font-size: 65px;
+        }
+
+        p {
+            font-size: 40px;
+        }
     }
 `

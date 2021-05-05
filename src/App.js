@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/About'
 import Mission from './components/Mission'
+import TeamSection from './components/Team'
 import VisionSection from './components/Vision'
 import ValuesSection from './components/Values'
 import Footer from './components/Footer'
@@ -26,13 +27,12 @@ function App(){
       <AboutSection {...homeObjOne} />
       <Mission {...homeObjTwo} />
       <VisionSection {...homeObjThree} />
+      <TeamSection {...homeObjFour} />
       <ValuesSection {...homeObjFive} />
       <Footer />
       <GlobalStyles />
     </Router>
    );
 }
-
-// Navbar, About, Mission, Vision, Team, Values, Footer
 
 export default App;

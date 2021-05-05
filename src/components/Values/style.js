@@ -5,6 +5,13 @@ export const Container = styled.div`
   flex: 1;
   align-items: stretch;
   height: 100vh;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,20 +26,39 @@ export const Content = styled.div`
     width: 600px;
     height: 600px;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+    justify-content: center;
+
+    img {
+      margin-top: 50px;
+      width: 100%;
+      height: 10%;
+    }
+  }
 `;
 
 export const Title = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 20px;
 
   h1 {
     font-size: 72px;
     font-weight: bold;
     line-height: 80px;
-    align-items: left;
     text-align: left;
-
     color: #A629E7;
+
+    @media screen and (max-width: 1024px) {
+      line-height: 0;
+      text-align: center;
+      margin-top: 400px;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      margin-top: 120px;
+    }
   }
 `;
 
@@ -45,8 +71,21 @@ export const Words = styled.div`
 
   p {
     font-weight: 300;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 60px;
     padding: 0 90px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+
+    p {
+      padding: 0;
+      flex-wrap: none;
+      font-size: 22px;
+    }
   }
 `;

@@ -16,4 +16,14 @@ export const Container = styled.footer`
     line-height: 34px;
     text-align: center;
   }
+
+  @media screen and (max-width: 1280px) {
+    margin-top: 500px;
+    width: 100%;
+    padding: 0;
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;

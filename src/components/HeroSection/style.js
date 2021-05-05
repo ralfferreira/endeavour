@@ -5,15 +5,24 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 700px;
+    max-height: 650px;
     height: 100vh;
     margin-bottom: 100px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        max-height: 510px;
+        margin-bottom: 150px;
+    }
+    
+    @media (min-width: 1281px) and (max-width: 1440px) {
+        max-height: 550px;
     }
 `
 
@@ -25,7 +34,7 @@ export const HeroBackground = styled.div`
     width: 100%;
     height: 100vh;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 `
@@ -65,7 +74,6 @@ export const HeroContent = styled.div`
     h1 {
         background-clip: text;
         color: #000;
-        margin: auto 0px !important;
         filter: brightness(0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -82,7 +90,20 @@ export const HeroContent = styled.div`
         display: flex;
         font-weight: bolder;
         justify-content: center;
-        font-size: 40px;
+        font-size: 36px;
         height: 80vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 0;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 32px;
+        margin-left: 50px;
+
+        h2 {
+            font-size: 25px;
+        }
     }
 `
