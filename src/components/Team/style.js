@@ -3,8 +3,16 @@ import styled from 'styled-components';
 import BackgroundImg from '../../assets/TeamBackground.png';
 import RalfImg from '../../assets/Team_Ralf.png';
 import CaldasImg from '../../assets/Team_Caldas.png';
+import ViniImg from '../../assets/Team_Vini.png';
+import JuliaImg from '../../assets/Team_Julia.png';
+import TheusImg from '../../assets/Team_Theus.png';
+import MariImg from '../../assets/Team_Mari.png';
 import RalfImgDark from '../../assets/TeamRalfDark.png';
 import CaldasImgDark from '../../assets/TeamCaldasDark.png';
+import ViniImgDark from '../../assets/TeamViniDark.png';
+import JuliaImgDark from '../../assets/TeamJuliaDark.png';
+import TheusImgDark from '../../assets/TeamTheusDark.png';
+import MariImgDark from '../../assets/TeamMariDark.png';
 
 export const Container = styled.section`
   width: 100%;
@@ -164,32 +172,32 @@ export const Cards = styled.div`
   }
 
   .CardJu {
-      background: url(${RalfImg}) no-repeat center;
+      background: url(${JuliaImg}) no-repeat center;
       background-size: cover;
       
       &:hover {
-        background: url(${RalfImgDark}) no-repeat center;
+        background: url(${JuliaImgDark}) no-repeat center;
         background-size: cover;
         transition: 0.2s;
       }
     }
 
   .CardMari {
-    background: url(${RalfImg}) no-repeat center;
+    background: url(${MariImg}) no-repeat center;
     background-size: cover;
 
     &:hover {
-      background: url(${RalfImgDark}) no-repeat center;
+      background: url(${MariImgDark}) no-repeat center;
       background-size: cover;
       transition: 0.2s;
     }
   }
   .CardTheus {
-    background: url(${RalfImg}) no-repeat center;
+    background: url(${TheusImg}) no-repeat center;
     background-size: cover;
 
     &:hover {
-      background: url(${RalfImgDark}) no-repeat center;
+      background: url(${TheusImgDark}) no-repeat center;
       background-size: cover;
       transition: 0.2s;
     }
@@ -215,11 +223,11 @@ export const Cards = styled.div`
     }
   }
   .CardVini {
-    background: url(${RalfImg}) no-repeat center;
+    background: url(${ViniImg}) no-repeat center;
     background-size: cover;
 
     &:hover {
-      background: url(${RalfImgDark}) no-repeat center;
+      background: url(${ViniImgDark}) no-repeat center;
       background-size: cover;
       transition: 0.2s;
     }
